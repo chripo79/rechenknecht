@@ -2,17 +2,21 @@
 <header>
     <meta charset="utf-8">
     <title>Rechneknecht</title>
+    <link rel="import" href="applet/about.html">
+    <link rel="import" href="applet/solve-inp.html">
     <link rel="stylesheet" href="style/photon.css">
     <link rel="stylesheet" href="style/sections.css">
     <link rel="stylesheet" href="style/elements.css">
+
+    
 
 
 </header>
 
 <body>
-
+        
     <div class="window">
-        <div class="window-content">
+        <div  class="window-content">
             <div class="pane-group">
                 <div class="pane pane-sm sidebar">
                     <nav id="navi" class="nav-group">
@@ -27,29 +31,13 @@
 
                 </div>
 
-                <div class="pane">
-
-                    <section id="berechne" class="sech">
-                        <div>
-                            <h3>Löse eingabe:</h3>
-                            <input id="rechne_eingabe" type="text" class="input long">
-                            <p id="rechne_ausgabe" class="output"> </p>
-                            <script src="applet/imp-calc.js"></script>
-                        </div>
-                    </section>
-
-
-                    <section id="about" class="secs">
-                        <div>
-                            <h3>Der Rechenknecht</h3>
-                            <p> Dies ist eien sammlung
-                                kleiner Tools<br> zum berechnen verschiedener Dinge.</p>
-
-                        </div>
-                    </section>
+                <div id="hauptfenster"class="pane content">
+                        <script src="behave/import.js"></script>
+                                      
 
                 </div>
             </div>
+
             <script src="behave/navigation.js"></script>
         </div>
 
