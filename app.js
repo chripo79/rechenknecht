@@ -11,6 +11,7 @@ const url = require('url');
 */
 let win =null;
 
+
 function initialize(){
    function createWindow(){ 
    const windowOptions = {
@@ -25,21 +26,21 @@ function initialize(){
 
 
    win =new BrowserWindow(windowOptions);
-   win.loadURL(path.join('file://',__dirname, '/index.html'))
+   win.loadURL(path.join('file://',__dirname, '/index.html'));
     win.openDevTools();
     
    win.on('closed',()=>{
-    win = null
+    win = null;
     });
     }
 
-    app.on("ready",()=>{createWindow()});
+    app.on("ready",()=>{createWindow();});
 
-app.on('window-all-closed',()=>{ app.quit()});
+app.on('window-all-closed',()=>{ app.quit();});
 
 app.on('activate',()=>{
     if(win===null){
-        createWindow()
+        createWindow();
     }
 });
 
