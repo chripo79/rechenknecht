@@ -21,7 +21,7 @@ function initialize(){
       webPreferences:{nodeIntegration:true}
       //nodeIntegration=true    
           
-   }
+   };
 
 
    win =new BrowserWindow(windowOptions);
