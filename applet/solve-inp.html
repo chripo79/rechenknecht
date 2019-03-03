@@ -1,10 +1,39 @@
 <template class="template">
         <section id="berechne" class="sech">
-                <div>
+                <button id="add_rechne" class="btn btn-mini btn-default"><SPAN class="icon icon-plus"></SPAN></button>
+                <div id="rechenfeld_0">
                         <h3>Löse eingabe:</h3>
-                        <input id="rechne_eingabe" type="text" class="input long">
-                        <p id="rechne_ausgabe" class="output"> </p>
-                        <script src="applet/imp-calc.js"></script>
+                        <input id="rechne_eingabe_0" type="text" class="input long calc">
+                        <p>
+                                <div id="rechne_ausgabe_0" class="output"></div> 
+                                <button id="delrechnung_0" class="btn btn-mini btn-default behind">
+                                        <span class="icon icon-minus"></span>
+                                </button>
+                        </p>
+
                 </div>
+                <template id=tmp_add>
+                                <div id="tmp_rechenfeld">
+                                                <h3>Löse eingabe:</h3>
+                                                <input id="tmp_rechne_eingabe" type="text" class="input long calc">
+                                                <p>
+                                                        <div id="tmp_rechne_ausgabe" class="output"></div> 
+                                                        <button id="tmp_delrechnung" class="btn btn-mini btn-default behind">
+                                                                <span class="icon icon-minus"></span>
+                                                        </button>
+                                                </p>
+                        
+                                        </div>
+                
+                </template>
+        
+        
+        
+                
+        
         </section>
+        <script src="applet/imp-calc.js"></script>
 </template>
+
+
+<

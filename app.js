@@ -27,7 +27,7 @@ function initialize(){
 
    win =new BrowserWindow(windowOptions);
    win.loadURL(path.join('file://',__dirname, '/index.html'));
-    win.openDevTools();
+    // win.openDevTools();
     
    win.on('closed',()=>{
     win = null;
